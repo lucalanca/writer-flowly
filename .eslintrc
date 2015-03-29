@@ -1,0 +1,13 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": 0,
+    "global-strict": [2, "always"],
+    "quotes": [2, "single"],
+    "key-spacing": 0,
+    "comma-spacing": 0
+  },
+  "globals": {
+    "angular": true
+  }
+}

@@ -1,0 +1,13 @@
+.templates {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  background: rgba(red, 0.1);
+  transform: translateX(100%);
+  transition: transform 300ms ease-in;
+  &.is-shown {
+    transform: translateX(0);
+  }
+}

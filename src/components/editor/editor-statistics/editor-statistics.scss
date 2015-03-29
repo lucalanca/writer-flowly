@@ -1,0 +1,20 @@
+.statistics {
+  // display: none; //CHANGE ME
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+
+  background: $body-color;
+
+  height: $editor-statistics-height;
+
+  &-label {
+    margin: 0;
+    font-size: .6rem;
+    line-height: $editor-statistics-height;
+    font-weight: 300;
+    font-style: italic;
+  }
+}

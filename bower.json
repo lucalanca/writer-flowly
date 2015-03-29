@@ -1,0 +1,24 @@
+{
+  "name": "writer",
+  "version": "0.0.0",
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "angular-animate": "~1.3.4",
+    "angular-cookies": "~1.3.4",
+    "angular-touch": "~1.3.4",
+    "angular-sanitize": "~1.3.4",
+    "angular-resource": "~1.3.4",
+    "angular-ui-router": "~0.2.13",
+    "angular": "~1.3.4",
+    "normalize-scss": "~3.0.2",
+    "angular-elastic": "~2.4.2",
+    "angular-markdown-directive": "~0.3.1",
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#~1.4.5"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.4"
+  },
+  "resolutions": {
+    "angular": "~1.3.4"
+  }
+}

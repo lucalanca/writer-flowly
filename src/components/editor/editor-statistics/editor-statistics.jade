@@ -1,0 +1,11 @@
+.statistics
+  p.statistics-label
+    ng-pluralize(
+      count="statistics.wordsCount",
+      when="{'1':     '{{ statistics.wordsCount }} word',\
+             'other': '{{ statistics.wordsCount }} words'}")
+    ng-pluralize(
+      count="statistics.minutesToRead",
+      when="{'1':     '({{ statistics.minutesToRead }} minute)',\
+             'other': '({{ statistics.minutesToRead }} minutes'}")
+

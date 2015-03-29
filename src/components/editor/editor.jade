@@ -1,0 +1,19 @@
+.editor-container
+  button(ng-click="editor.toggleTemplates()") Templates
+  templates(is-shown="editor.templatesDrawerOpened")
+  .editor
+    textarea.editor-line(
+      msd-elastic="",
+      rows="1",
+      ng-repeat="line in editor.lines track by $index",
+      ng-model="editor.lines[line.number - 1].content",
+      ng-focus="editor.updateActiveLineNumber(line.number)",
+      placeholder="{{ line.number === 1 && editor.lines.length === 1 ? 'Click to start typing...' : '' }}",
+      editor-line-focus="{{ line.number }}",
+      ng-change="editor.parseActiveLine()",
+      ng-class="{\
+        'is-collasped'           : line.collasped === true,\
+        'are-children-collapsed' : line.childrenCollapsed === true\
+      }"
+    )
+  editor-statistics(lines="editor.lines")
