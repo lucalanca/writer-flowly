@@ -32,3 +32,13 @@ gulp.task('default', ['clean'], function () {
 
 var taskListing = require('gulp-task-listing');
 gulp.task('help', taskListing);
+
+
+var ghPages = require('gulp-gh-pages');
+gulp.task('deploy', function() {
+  return gulp
+    .src('./dist/**/*')
+    .pipe(
+      ghPages({ branch: 'gh-pages' })
+    );
+});
