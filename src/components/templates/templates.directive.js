@@ -24,7 +24,7 @@ class TemplatesCtrl {
   }
 }
 
-// TemplatesCtrl.$inject = [];
+TemplatesCtrl.$inject = [];
 
 
 function Templates () {

@@ -1,5 +1,5 @@
 .templates(ng-class="{ 'is-shown': templates.isShown }")
   h3 Templates
-  ul
+  ul.templates-list
     li(ng-repeat="template in templates.templates")
       a(ng-click="templates.selectTemplate(template)") {{ template.name }}
